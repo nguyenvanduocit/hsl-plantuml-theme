@@ -1,72 +1,30 @@
-@startuml
-
+!define primaryColor   #4267b2
+!define secondaryColor #56bd77
+skinparam handwritten true
 skinparam shadowing false
-skinparam roundcorner 20
-skinparam BackgroundColor #ffffff
-skinparam ArrowColor #007ac9
 
-skinparam default {
-    FontColor #007ac9
-    FontName Nunito Bold
-    FontSize 12
-    MonospacedFontName Source Code Pro
+skinparam Default {
+  FontName inconsolata
 }
-
-skinparam Actor {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Node {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Interface {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Usecase {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Rectangle {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Note {
-    BackgroundColor #dc0451
-    BorderColor #dc0451
-    FontColor #ffffff
-}
-
-skinparam Package {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Queue {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
-skinparam Database {
-    BackgroundColor #ffffff
-    BorderColor #007ac9
-}
-
 skinparam Participant {
-    BackgroundColor #007ac9
-    BorderColor #007ac9
-    FontColor #ffffff
-    FontStyle bold
+    FontColor black
+    BackgroundColor #ffffff
+    BorderColor black
 }
-
+skinparam Arrow {
+  Color primaryColor
+  FontColor primaryColor
+}
+skinparam Activity {
+  FontColor secondaryColor
+  StartColor primaryColor
+  EndColor primaryColor
+  BackgroundColor #ffffff
+  BorderColor secondaryColor
+  DiamondBackgroundColor #ffffff
+  DiamondBorderColor secondaryColor
+  DiamondFontColor secondaryColor
+}
 skinparam Sequence {
-    LifeLineBorderColor #007ac9
+  LifeLineBorderColor black
 }
-
-@enduml
